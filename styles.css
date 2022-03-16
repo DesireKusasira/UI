@@ -14,6 +14,19 @@
     /* display: block;  */
     /* text-indent: -9999px; */
 }
+/* This code is for the button in banner */
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color:whitesmoke;
+    background-color: blue;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
 
 h1 {
     font-size: 50px;
@@ -186,17 +199,19 @@ body {
     background-color:rgb(247, 133, 133);
 
 }
+/* This code makes the containers align into one horizontal line */
 #product-1 .pro-container{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    flex-wrap: wrap;
 }
 /* This code places the featured products text center */
 #product-1{
-    text-align: start;
+    text-align: center;
 }
 /* This code makes a neat box for the watches */
-.pro{
+#product-1 .pro{
     width: 23%;
     height: 50%;
     min-width: 250px;
@@ -210,31 +225,85 @@ body {
 }
 
 /* This code increases the shadow effect on hover */
-.section-p1 .pro:hover{
+#product-1 .pro:hover{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 
 }
 /* This code puts the watch into the box and makes it responsive */
-.section-p1 .pro img{
+#product-1 .pro img{
     width: 100%;
     height: 300px;
     border-radius: 20px;
 
 }
 /* This code styles the description in the box */
-.section-p1 .pro .des{
-    text-align: center;
+#product-1 .pro .des{
+    text-align: start;
     padding: 10px 0;
 }
 
-.section-p1 .pro .des span{
-    color: silver;
+#product-1 .pro .des span{
+    color: rgb(56, 55, 55);
     font-size: 12px;
 }
-.section-p1 .pro .des h5{
+#product-1 .pro .des h5{
     padding-top: 7px;
-    color: red !important;
+    color: rgb(6, 87, 240) !important;
+    font-size: 14px;
 }
-.section-p1 .pro .des i{
-    color: yellow !important;
+#product-1 .pro .des i{
+    color: rgb(207, 207, 3) !important;
+    font-size: 12px;
+}
+#product-1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(4, 179, 4);
+
+}
+/* this code styles the cart */
+#product1 .pro .des .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid silver;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+/* this code styles the banner below */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./Pics/confetti2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+}
+/* this code styles the text in the banner */
+#banner h4{
+    color: rgb(80, 78, 78);
+    font-size: 16px;
+}
+#banner h2{
+    color: rgb(90, 62, 62);
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: rgb(121, 109, 3);
+    
+}
+#banner button:hover{
+    background-color:red;
+    color: rgb(211, 211, 6);
 }
