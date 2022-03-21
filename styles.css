@@ -307,3 +307,184 @@ body {
     background-color:red;
     color: rgb(211, 211, 6);
 }
+ /* This code styles our small banners below the watches */
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./Pics/istockphoto-6.jpg");
+    min-width: 650px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+/* This code changes the background of the second small banner */
+#sm-banner .banner-box2{
+    background-image: url("./Pics/istockphoto-.jpg");
+}
+#sm-banner h2{
+    color:rgba(0, 0, 255, 0.747);
+    font-size: 3rem;
+    font-weight: 800px;
+}
+#sm-banner span{
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: 600px;
+    padding: 10px;
+}
+button.btn{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color:#000;
+    background-color: #EEE6CE;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    outline: none;
+    transition: 0.2s;
+
+}
+/* This code changes the button color on clicking the card */
+#sm-banner .banner-box:hover button{
+    background-color:rgba(0, 0, 255, 0.699);
+    color: #e8f6ea;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./Pics/istockphoto-3.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(./Pics/istockphoto-10.jpg);
+}
+#banner3 .banner-box3{
+    background-image: url(./Pics/istockphoto-5.jpg);
+}
+#banner3 h2{
+    color: #e8f6ea;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color: #e8f6ea;
+    font-weight: 8s00;
+    font-size: 15px;
+}
+/* Shop page */
+#page-header{
+    background-image: url(./Pics/istockphoto-3.jpg);
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px;
+    text-align: center;
+}
+#page-header h2,
+#page-header p{
+    color: #0f1e94;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #0f1e94;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #EEE6CE;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Product */
+#prodetails{
+    display: flex;
+    margin :20px;
+}
+#prodetails.single-pro-image{
+    width: 40%;
+    margin-right: 50%;
+}
+.small-img-group{
+    display:flex;
+    justify-content: space-between;
+
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+}
+#prodetails .single-pro-details h4{
+    padding:40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details button:focus{
+    outline: none;
+}
+#prodetails .single-pro-details button{
+    background-color: #0f1e94;
+    color: #e8f6ea;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+ /* Single product */
+ #prodetails {
+    display: flex; 
+    flex-direction: column;
+ }
+ #prodetails.single-pro-image{
+     width: 100%;
+     margin-right: 0;
+ }
+ /* sign up */
+.login{
+    width: 100%;
+    height: 100%;
+}
